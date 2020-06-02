@@ -1,0 +1,18 @@
+{
+   "cluster": "ecs-learn",
+   "serviceName": "ecs-service-name",
+   "taskDefinition": "ecs-learn:2",
+   "desiredCount": 1,
+   "launchType": "FARGATE",
+   "networkConfiguration": {
+       "awsvpcConfiguration": {
+         "subnets": [
+               "subnet-9e211df6"
+         ],
+         "securityGroups": [
+               "sg-0739f294e8aa8da02"
+         ],
+         "assignPublicIp": "ENABLED"
+       }
+   }
+}
